@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<FlowPane prefHeight="414.0" prefWidth="622.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hospitalityhelper.OrderSheetController">
+    <children>
+        <ToolBar prefHeight="35.0" prefWidth="651.0">
+            <items>
+                <Button fx:id="homeBtn" mnemonicParsing="false" onAction="#onAddHomeClicked" prefHeight="25.0" prefWidth="76.0" text="Home" />
+                <Button fx:id="menuBtn" mnemonicParsing="false" onAction="#onAddMenuItemClicked" text="Add Menu Item" />
+                <Button fx:id="stockBtn" mnemonicParsing="false" onAction="#onStockItemClicked" text="Add Stock Item" />
+                <Button fx:id="salesBtn" mnemonicParsing="false" onAction="#onAddSaleDataClicked" text="Add sales data" />
+                <Button fx:id="predictedBtn" mnemonicParsing="false" onAction="#onPredictedSalesClicked" text="Predicted sales data" />
+            <Button fx:id="orderBtn" mnemonicParsing="false" onAction="#onOrderSheetPressed" text="Predicted OrderSheet">
+               <effect>
+                  <InnerShadow />
+               </effect></Button>
+            </items>
+        </ToolBar>
+      <HBox prefHeight="378.0" prefWidth="651.0">
+         <children>
+            <VBox prefHeight="378.0" prefWidth="305.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Add stock item to stock count" wrappingWidth="162.13671875" />
+                  <HBox prefHeight="23.0" prefWidth="305.0">
+                     <children>
+                        <ChoiceBox fx:id="stockBox" prefHeight="25.0" prefWidth="116.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Amount" />
+                        <TextField fx:id="amountTxtField" prefHeight="25.0" prefWidth="73.0" />
+                        <Text fx:id="measuredInTxt" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="25.13671875" />
+                        <Button fx:id="addBtn" mnemonicParsing="false" onAction="#onAddBtnPress" text="Add" />
+                     </children>
+                  </HBox>
+                  <Button fx:id="generateBtn" mnemonicParsing="false" onAction="#genrateStockBtnPressed" prefHeight="25.0" prefWidth="307.0" text="Generate estimated stock take" />
+                  <TableView fx:id="stockTakeTable" prefHeight="330.0" prefWidth="305.0">
+                    <columns>
+                      <TableColumn fx:id="stStockCol" prefWidth="210.0" text="Stock" />
+                      <TableColumn fx:id="stAmountCol" prefWidth="94.0" text="Amount" />
+                    </columns>
+                  </TableView>
+               </children>
+            </VBox>
+            <VBox prefHeight="378.0" prefWidth="330.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Estimated Order Sheet" textAlignment="CENTER" underline="true" wrappingWidth="302.380859375">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+                  <TableView fx:id="estimatedStockTakeTable" prefHeight="353.0" prefWidth="480.0">
+                     <columns>
+                        <TableColumn fx:id="estStockCol" prefWidth="108.0" text="Stock" />
+                        <TableColumn fx:id="estAmountCol" prefWidth="139.0" text="Amount" />
+                        <TableColumn fx:id="estMeasurementCol" prefWidth="82.0" text="Measurement" />
+                     </columns>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+    </children>
+</FlowPane>

@@ -1,26 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToolBar?>
-<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<VBox alignment="CENTER" prefHeight="353.0" prefWidth="591.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="com.example.hospitalityhelper.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-    </padding>
-   <ToolBar prefHeight="35.0" prefWidth="539.0">
-     <items>
-         <Button fx:id="homeBtn" mnemonicParsing="false" onAction="#onAddHomeClicked" prefHeight="25.0" prefWidth="76.0" text="Home" />
-         <Button fx:id="menuBtn" mnemonicParsing="false" onAction="#onAddMenuItemClicked" text="Add Menu Item" />
-         <Button fx:id="stockBtn" mnemonicParsing="false" onAction="#onStockItemClicked" text="Add Stock Item" />
-         <Button fx:id="salesBtn" mnemonicParsing="false" onAction="#onAddSaleDataClicked" text="Add sales data" />
-         <Button fx:id="predictedBtn" mnemonicParsing="false" onAction="#onPredictedSalesClicked" text="Predicted sales data" />
-     </items>
-   </ToolBar>
-   <BorderPane prefHeight="388.0" prefWidth="551.0" />
-
-    <Label fx:id="welcomeText" />
-</VBox>
+<FlowPane prefHeight="414.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hospitalityhelper.PredictedSalesController">
+    <children>
+        <ToolBar prefHeight="35.0" prefWidth="651.0">
+            <items>
+                <Button fx:id="homeBtn" mnemonicParsing="false" onAction="#onAddHomeClicked" prefHeight="25.0" prefWidth="76.0" text="Home" />
+                <Button fx:id="menuBtn" mnemonicParsing="false" onAction="#onAddMenuItemClicked" text="Add Menu Item" />
+                <Button fx:id="stockBtn" mnemonicParsing="false" onAction="#onStockItemClicked" text="Add Stock Item" />
+                <Button fx:id="salesBtn" mnemonicParsing="false" onAction="#onAddSaleDataClicked" text="Add sales data" />
+                <Button fx:id="predictedBtn" mnemonicParsing="false" onAction="#onPredictedSalesClicked" text="Predicted sales data">
+               <effect>
+                  <InnerShadow />
+               </effect></Button>
+                <Button fx:id="orderBtn" mnemonicParsing="false" onAction="#onOrderSheetPressed" text="Predicted OrderSheet" />
+            </items>
+        </ToolBar>
+        <HBox prefHeight="369.0" prefWidth="180.0">
+            <children>
+            <VBox>
+               <children>
+                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date wanted" />
+                      <TextField fx:id="dateText" prefHeight="25.0" prefWidth="73.0" promptText="12:12:2000" />
+                      <Button fx:id="submitBtn" mnemonicParsing="false" onAction="#onButtonPress" prefHeight="25.0" prefWidth="54.0" text="Button" />
+                        <TableView fx:id="salesDataTable" prefHeight="343.0" prefWidth="168.0">
+                            <columns>
+                                <TableColumn fx:id="dateCol" prefWidth="72.0" text="Date" />
+                                <TableColumn fx:id="totalCol" prefWidth="120.0" text="Total" />
+                            </columns>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </TableView>
+               </children>
+            </VBox>
+            </children>
+        </HBox>
+        <VBox prefHeight="369.0" prefWidth="272.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Predicted Sales Data" underline="true" wrappingWidth="200.111328125">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Text>
+                <Text fx:id="predictedSalesDate" strokeType="OUTSIDE" strokeWidth="0.0" />
+                <Text fx:id="predictedSalesTotal" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <LineChart fx:id="lineChart" alternativeColumnFillVisible="true" prefHeight="229.0" prefWidth="272.0">
+              <xAxis>
+                <CategoryAxis fx:id="hoursAxis" label="Hour" prefHeight="35.0" prefWidth="129.0" side="BOTTOM" tickLabelRotation="175.9" tickLength="3.0">
+                     <tickLabelFont>
+                        <Font size="13.0" />
+                     </tickLabelFont></CategoryAxis>
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="salesAxis" label="Sales per hour" side="LEFT" />
+              </yAxis>
+            </LineChart>
+            </children>
+        </VBox>
+    </children>
+</FlowPane>

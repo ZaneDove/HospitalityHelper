@@ -1,13 +1,29 @@
 package com.example.hospitalityhelper;
 
 public class MenuItem {
-    double price;
-    UsedStockItem[] usedStock;
-    String name;
+    public double price;
+    public UsedStockItem[] usedStock;
+    public String name;
 
     public MenuItem(String name, Double price, UsedStockItem[] usedStock) {
         this.price = price;
         this.usedStock = usedStock;
+        this.name = name;
+    }
+
+    public UsedStockItem[] getUsedStock() {
+        return usedStock;
+    }
+
+    public void setUsedStock(UsedStockItem[] usedStock) {
+        this.usedStock = usedStock;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
         this.name = name;
     }
 

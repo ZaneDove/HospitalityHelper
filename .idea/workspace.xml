@@ -7,35 +7,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3273fe3-ae39-4541-92e5-1434b949e037" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/DailySalesData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/EstimatedOrderSheet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/EstimatedSalesData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/HelloApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/MenuItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/Sale.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/StockItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/StockTake.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/UsedStockItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/AddMenuItem.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/AddSaleData.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/AddStockItem.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/Index.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/PredictedSalesData.fxml" afterDir="false" />
+    <list default="true" id="f3273fe3-ae39-4541-92e5-1434b949e037" name="Changes" comment="added navigation functionallity">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/MenuItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/OrderSheetController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/PredictedSalesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/SaleDataController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/StockItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/OrderSheet.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/DailySalesData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/DailySalesData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/EstimatedOrderSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/EstimatedOrderSheet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/EstimatedSalesData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/EstimatedSalesData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/FXController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/MenuItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/MenuItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/Sale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/UsedStockItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/UsedStockItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/AddMenuItem.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/AddMenuItem.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/AddSaleData.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/AddSaleData.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/AddStockItem.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/AddStockItem.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/Index.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/Index.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/PredictedSalesData.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/PredictedSalesData.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +40,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -63,7 +58,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -76,6 +71,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Application.executor": "Run",
     "Application.HelloApplication.executor": "Run",
     "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -91,9 +87,10 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -102,6 +99,9 @@
       <recent name="C:\Users\44771\Desktop\Whos50GameCamunda8-main\HospitalityHelper\src\main\resources\com\example\hospitalityhelper" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.hospitalityhelper" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.hospitalityhelper" />
     </key>
   </component>
@@ -122,11 +122,51 @@
       <updated>1712156455074</updated>
       <workItem from="1712156456169" duration="1234000" />
       <workItem from="1712322844012" duration="4296000" />
-      <workItem from="1712581934155" duration="5299000" />
+      <workItem from="1712581934155" duration="14230000" />
+      <workItem from="1712676557773" duration="8455000" />
+      <workItem from="1712836789769" duration="15286000" />
+      <workItem from="1712995587129" duration="17586000" />
+      <workItem from="1713431825920" duration="18179000" />
+      <workItem from="1713529121230" duration="17909000" />
     </task>
+    <task id="LOCAL-00001" summary="added navigation functionallity">
+      <option name="closed" value="true" />
+      <created>1712590669905</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712590669905</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added navigation functionallity" />
+    <option name="LAST_COMMIT_MESSAGE" value="added navigation functionallity" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.time.format.DateTimeParseException" package="java.time.format" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ClassCastException" package="java.lang" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

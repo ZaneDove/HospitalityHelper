@@ -1,19 +1,20 @@
 package com.example.hospitalityhelper;
 
 import java.time.LocalDate;
+import java.util.Map;
 
 public class EstimatedSalesData {
-    int[] salesPerHours;
+    Map<Integer, Double> salesPerHours;
     double salesTotals;
     LocalDate date;
 
-    public EstimatedSalesData(int[] salesPerHours, double salesTotals, LocalDate date) {
+    public EstimatedSalesData(Map<Integer, Double> salesPerHours, double salesTotals, LocalDate date) {
         this.salesPerHours = salesPerHours;
         this.salesTotals = salesTotals;
         this.date = date;
     }
 
-    public int[] getSalesPerHours() {
+    public Map<Integer, Double> getSalesPerHours() {
         return salesPerHours;
     }
 

@@ -1,7 +1,7 @@
 package com.example.hospitalityhelper;
 
 public class UsedStockItem extends StockItem {
-    double amount;
+    public double amount;
 
     public UsedStockItem(String name, String measuredIn, double amount) {
         super(name, measuredIn);

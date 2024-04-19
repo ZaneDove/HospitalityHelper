@@ -4,9 +4,9 @@ import java.time.LocalDate;
 
 
 public class DailySalesData {
-    Sale[] sales;
-    double salesTotal;
-    LocalDate date;
+    public Sale[] sales;
+    public double salesTotal;
+    public LocalDate date;
 
     public DailySalesData(Sale[] sales, LocalDate date) {
         this.sales = sales;
@@ -23,6 +23,7 @@ public class DailySalesData {
 
             salesTotal = salesTotal + sale.getPriceTotal();
         }
+        this.salesTotal = Math.round(salesTotal * 100.0) / 100.0;
     }
 
     public double getSalesTotal() {
