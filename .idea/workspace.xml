@@ -7,16 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3273fe3-ae39-4541-92e5-1434b949e037" name="Changes" comment="added full functionality">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f3273fe3-ae39-4541-92e5-1434b949e037" name="Changes" comment="Fixed bugs on sales data, menu item and stock item">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/FXController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/FXController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/MenuItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/MenuItemController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/PredictedSalesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/PredictedSalesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/SaleDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/SaleDataController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/StockItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/StockItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/AddMenuItem.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/AddMenuItem.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/PredictedSalesData.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/PredictedSalesData.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +133,7 @@
       <workItem from="1715097038758" duration="2166000" />
       <workItem from="1715100120361" duration="1463000" />
       <workItem from="1715101938130" duration="25000" />
-      <workItem from="1715101980744" duration="4441000" />
+      <workItem from="1715101980744" duration="5672000" />
     </task>
     <task id="LOCAL-00001" summary="added navigation functionallity">
       <option name="closed" value="true" />
@@ -157,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713547114470</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixed bugs on sales data, menu item and stock item">
+      <option name="closed" value="true" />
+      <created>1715106693407</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715106693407</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,7 +168,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added navigation functionallity" />
     <MESSAGE value="added full functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="added full functionality" />
+    <MESSAGE value="Fixed bugs on sales data, menu item and stock item" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bugs on sales data, menu item and stock item" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

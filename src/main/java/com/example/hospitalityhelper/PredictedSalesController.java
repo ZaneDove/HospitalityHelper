@@ -248,11 +248,11 @@ public class PredictedSalesController extends FXController {
             } else if (weatherString == "Clear") {
                 text = "It looks like a clear day tomorrow. expect business as normal";
             }else{
-                text = "The weather is looking uncertain tomorrow. keep an eye out for rain";
+                text = "The weather is looking uncertain tomorrow.\n keep an eye out for rain";
             }
 
             weatherText.setText(text);
-            labourText.setText("It looks like your busiest time is around 12 and 3, prioritize these hours when scheduling labour. ");
+            labourText.setText("It looks like your busiest time is around 12 and 3, \nprioritize these hours when scheduling labour. \n Sales look slow after 6, think about saving labour then\n or getting some extra cleaning done ");
         }
     }
 
