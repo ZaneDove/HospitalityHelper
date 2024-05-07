@@ -18,6 +18,8 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.lang.reflect.Type;
 import java.sql.ResultSet;
@@ -42,7 +44,7 @@ public class PredictedSalesController extends FXController {
     @FXML
     Button submitBtn;
     @FXML
-    Text predictedSalesDate, predictedSalesTotal;
+    Text predictedSalesDate, predictedSalesTotal, weatherText, labourText;
     @FXML
     LineChart<String, Integer> lineChart;
 
@@ -102,7 +104,7 @@ public class PredictedSalesController extends FXController {
         salesDataTable.setItems(dailySalesDataList);
     }
 
-    public void onButtonPress() {
+    public void onButtonPress() throws Exception {
         LocalDate dateToPredict = null;
 
         try {
@@ -140,7 +142,7 @@ public class PredictedSalesController extends FXController {
 
             }
         }
-
+        setWeather();
 
     }
 
@@ -155,7 +157,7 @@ public class PredictedSalesController extends FXController {
         dialog.show();
     }
 
-    public void compareSalesData(LocalDate dateToPredict, LocalDate lastWeek, LocalDate lastYear, LocalDate lastYearLastWeek) {
+    public void compareSalesData(LocalDate dateToPredict, LocalDate lastWeek, LocalDate lastYear, LocalDate lastYearLastWeek) throws Exception {
         //get sales data
 
         DailySalesData lastWeekSalesData = dailySalesDataMap.get(lastWeek);
@@ -233,10 +235,25 @@ public class PredictedSalesController extends FXController {
             dataSeries1.getData().add(new XYChart.Data(hour, tempSales));
         }
         lineChart.getData().add(dataSeries1);
-
-
     }
+        //get weather data and set text
+        public void setWeather() throws Exception {
+            JSONObject json = readJsonFromUrl();
+            JSONObject list = json.getJSONObject("main");
+            JSONArray weather = json.getJSONArray("weather");
+            JSONObject todayWeather = weather.getJSONObject(0);
+            String weatherString = todayWeather.getString("main");
+            String text;
+            if (weatherString == "Rain"){
+                text = "It looks like rain tomorrow. expect to be busy on delivery but slower in house. Maybe sent a FOH member home? or get some extra cleaning done ";
+            } else if (weatherString == "Clear") {
+                text = "It looks like a clear day tomorrow. expect business as normal";
+            }else{
+                text = "The weather is looking uncertain tomorrow. keep an eye out for rain";
+            }
 
-
-}
+            weatherText.setText(text);
+            labourText.setText("It looks like your busiest time is around 12 and 3, prioritize these hours when scheduling labour. ");
+        }
+    }
 

@@ -73,5 +73,11 @@
             </LineChart>
             </children>
         </VBox>
+      <VBox prefHeight="369.0" prefWidth="185.0">
+         <children>
+            <Text fx:id="labourText" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text fx:id="weatherText" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children>
+      </VBox>
     </children>
 </FlowPane>

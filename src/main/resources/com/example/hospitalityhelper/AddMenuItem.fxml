@@ -54,7 +54,7 @@
                       </TableView>
                </children>
             </VBox>
-            <HBox prefHeight="175.0" prefWidth="325.0">
+            <HBox prefHeight="175.0" prefWidth="433.0">
                <children>
                   <VBox>
                      <children>
@@ -62,12 +62,13 @@
                               <TextField fx:id="menuItemName" />
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Price" />
                               <TextField fx:id="price" prefHeight="25.0" prefWidth="167.0" />
+                        <Button mnemonicParsing="false" onAction="#onAddMenuItemClicked" text="Add menu Item" />
                      </children>
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
                   </VBox>
-                  <VBox>
+                  <VBox prefHeight="165.0" prefWidth="255.0">
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Add stock used" />
                               <HBox prefHeight="36.0" prefWidth="194.0">
@@ -82,10 +83,6 @@
                                               <Insets top="5.0" />
                                           </HBox.margin>
                                       </TextField>
-                                  </children>
-                              </HBox>
-                              <HBox prefHeight="28.0" prefWidth="194.0">
-                                  <children>
                                       <TextField fx:id="amountInput" prefHeight="25.0" prefWidth="72.0" promptText="amount">
                                           <HBox.margin>
                                               <Insets top="5.0" />
@@ -98,6 +95,7 @@
                                       </Button>
                                   </children>
                               </HBox>
+                              <HBox prefHeight="28.0" prefWidth="194.0" />
                      </children>
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />

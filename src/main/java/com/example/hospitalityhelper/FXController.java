@@ -6,10 +6,16 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
+import org.json.JSONObject;
 
+import java.io.*;
+import java.net.URL;
+import java.nio.charset.Charset;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Map;
+
 
 public class FXController {
     Connection con;
@@ -18,7 +24,7 @@ public class FXController {
     Button homeBtn, menuBtn, stockBtn, salesBtn, predictedBtn, orderBtn;
 
     @FXML
-    public void initialize() throws SQLException {
+    public void initialize() throws Exception {
         //connect to database
         connectToDatabase();
 
@@ -119,6 +125,32 @@ public class FXController {
             System.out.println("can not connect to database /" + e);
         }
     }
+    //readAll for OpenWeather data
+    private static String readAll(Reader rd) throws IOException {
+        StringBuilder sb = new StringBuilder();
+        int cp;
+        while ((cp = rd.read()) != -1) {
+            sb.append((char) cp);
+        }
+        return sb.toString();
+    }
+    //Get OpenWeather data
+    public static JSONObject readJsonFromUrl() throws Exception {
+        String city = "Bristol";
+        final String API_KEY = "580b0cbd3b76c229d6b6221097fdc2fd";
+        String apiUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + API_KEY;
 
-
+        URL url = new URL(apiUrl);
+        InputStream is = new URL(apiUrl).openStream();
+        try {
+            BufferedReader rd = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
+            String jsonText = readAll(rd);
+            JSONObject json = new JSONObject(jsonText);
+            return json;
+        } finally {
+            is.close();
+        }
+    }
 }
+
+

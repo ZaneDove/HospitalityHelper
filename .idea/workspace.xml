@@ -7,27 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3273fe3-ae39-4541-92e5-1434b949e037" name="Changes" comment="added navigation functionallity">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/MenuItemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/OrderSheetController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/PredictedSalesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/SaleDataController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/StockItemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/OrderSheet.fxml" afterDir="false" />
+    <list default="true" id="f3273fe3-ae39-4541-92e5-1434b949e037" name="Changes" comment="added full functionality">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/DailySalesData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/DailySalesData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/EstimatedOrderSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/EstimatedOrderSheet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/EstimatedSalesData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/EstimatedSalesData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/FXController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/MenuItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/MenuItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/Sale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/UsedStockItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/UsedStockItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/FXController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/FXController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/PredictedSalesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalityhelper/PredictedSalesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/AddMenuItem.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/AddMenuItem.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/AddSaleData.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/AddSaleData.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/AddStockItem.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/AddStockItem.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/Index.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/Index.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/PredictedSalesData.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hospitalityhelper/PredictedSalesData.fxml" afterDir="false" />
     </list>
@@ -69,31 +55,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Application.executor": "Run",
-    "Application.HelloApplication.executor": "Run",
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/44771/Desktop/Whos50GameCamunda8-main/HospitalityHelper/src/main/resources/com/example/hospitalityhelper",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Zane/docs/OWM-JAPIs-master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\44771\Desktop\Whos50GameCamunda8-main\HospitalityHelper\src\main\resources\com\example\hospitalityhelper" />
@@ -127,7 +113,12 @@
       <workItem from="1712836789769" duration="15286000" />
       <workItem from="1712995587129" duration="17586000" />
       <workItem from="1713431825920" duration="18179000" />
-      <workItem from="1713529121230" duration="17909000" />
+      <workItem from="1713529121230" duration="18573000" />
+      <workItem from="1714044443784" duration="12000" />
+      <workItem from="1714128933378" duration="1094000" />
+      <workItem from="1715083284629" duration="1721000" />
+      <workItem from="1715091733612" duration="2350000" />
+      <workItem from="1715097038758" duration="2166000" />
     </task>
     <task id="LOCAL-00001" summary="added navigation functionallity">
       <option name="closed" value="true" />
@@ -137,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712590669905</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added full functionality">
+      <option name="closed" value="true" />
+      <created>1713547114470</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713547114470</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,7 +144,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added navigation functionallity" />
-    <option name="LAST_COMMIT_MESSAGE" value="added navigation functionallity" />
+    <MESSAGE value="added full functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="added full functionality" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
