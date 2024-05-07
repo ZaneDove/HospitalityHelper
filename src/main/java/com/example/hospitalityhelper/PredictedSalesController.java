@@ -143,7 +143,6 @@ public class PredictedSalesController extends FXController {
             }
         }
         setWeather();
-
     }
 
     private void showPopup(String string) {

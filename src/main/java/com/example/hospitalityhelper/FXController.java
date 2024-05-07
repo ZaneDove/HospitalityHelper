@@ -33,7 +33,7 @@ public class FXController {
     //navigation button functionallity
     //AddMenuItem button
     @FXML
-    protected void onAddMenuItemClicked() {
+    protected void onAddMenuItemClicked() throws SQLException {
         //get fxml scene
         try {
             Parent root = FXMLLoader.load(getClass().getResource("AddMenuItem.fxml"));

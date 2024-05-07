@@ -38,11 +38,12 @@ public class StockItemController extends FXController {
     }
 
     @FXML
-    protected void onCreateStockItemClicked() {
+    protected void onCreateStockItemClicked() throws SQLException {
         String name = stockName.getText();
         String measure = measuredIn.getValue();
         StockItem stockItem = new StockItem(name, measure);
         insertStockIntoDatabase(stockItem);
+        stockTableData();
 
     }
 

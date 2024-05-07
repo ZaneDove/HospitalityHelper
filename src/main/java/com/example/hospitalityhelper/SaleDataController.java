@@ -58,6 +58,7 @@ public class SaleDataController extends FXController {
     }
 
     public void getSalesData() throws SQLException {
+        dailySalesDataList = FXCollections.observableArrayList();
         String sql = "SELECT `json` FROM `dailysalesdata`";
         ResultSet data = con.createStatement().executeQuery(sql);
 
@@ -100,8 +101,7 @@ public class SaleDataController extends FXController {
     }
 
     private void openFile() throws IOException, SQLException {
-
-
+        salesList = new ArrayList<>();
         FileChooser fileChooser = new FileChooser();
         File file = fileChooser.showOpenDialog(null);
 
@@ -116,7 +116,7 @@ public class SaleDataController extends FXController {
                 while ((nextRecord = csvReader.readNext()) != null) {
                     for (String cell : nextRecord) {
                         String[] data = cell.split(",");
-                        DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm");
+                        DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
                         ArrayList<MenuItem> menuItemList = new ArrayList<>();
                         LocalTime time = LocalTime.parse(data[1], timeFormatter);
                         for (int i = 0; i < parseInt(data[2]); i++) {
@@ -158,7 +158,7 @@ public class SaleDataController extends FXController {
 
 
     @FXML
-    private void onSumbitPressed() {
+    private void onSumbitPressed() throws SQLException {
         try {
             DateTimeFormatter parser = DateTimeFormatter.ofPattern("dd:MM:yyyy");
             LocalDate date = LocalDate.parse(dateOfSaleTxt.getText(), parser);
@@ -205,5 +205,7 @@ public class SaleDataController extends FXController {
                 cause.printStackTrace();
             }
         }
+
+        getSalesData();
     }
 }

@@ -7,6 +7,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
+import java.awt.event.ActionListener;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -41,6 +42,27 @@ public class MenuItemController extends FXController {
         choiceBoxStock();
         menuItemTableData();
         menuItemTableData();
+
+    }
+
+    public void onDropDownSelected() throws SQLException {
+        String stock = (String) stockBox.getValue();
+        connectToDatabase();
+        //get stock
+
+        try {
+            String sql = "SELECT * FROM stockitem WHERE Name = ?";
+            PreparedStatement stmt = con.prepareStatement(sql);
+            stmt.setString(1, stock);
+            ResultSet rs = stmt.executeQuery();
+            //set values
+            while (rs.next()) {
+                measuredInTxt.setText(rs.getString("MeasuredIn"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
     }
 
     public void choiceBoxStock() {
@@ -53,7 +75,6 @@ public class MenuItemController extends FXController {
             while (rs.next()) {
                 //set values
                 stockBox.getItems().add(rs.getString("Name"));
-                measuredInTxt.setText(rs.getString("MeasuredIn"));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -84,7 +105,7 @@ public class MenuItemController extends FXController {
     }
 
     @FXML
-    protected void onAddMenuItemClicked() {
+    protected void onAddMenuItemClicked() throws SQLException {
         connectToDatabase();
         ObjectMapper mapper = new ObjectMapper();
         String usedStockItemsJson;
@@ -106,6 +127,7 @@ public class MenuItemController extends FXController {
         stockBox.getItems().clear();
         amountInput.clear();
         usedStockTable.getItems().clear();
+        menuItemTableData();
     }
 
     public void menuItemTableData() throws SQLException {

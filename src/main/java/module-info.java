@@ -7,6 +7,7 @@ module com.example.hospitalityhelper {
     requires com.google.gson;
     requires opencsv;
     requires java.net.http;
+    requires java.desktop;
 
 
     opens com.example.hospitalityhelper to javafx.fxml;
